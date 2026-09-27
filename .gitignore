@@ -25,12 +25,26 @@ dist/
 .vite/
 
 # ── 编辑器与系统 ──
+# .vscode 下只保留团队共享的项目配置，其余忽略
 .vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
 .idea/
 .DS_Store
 Thumbs.db
+
+# ── 迁移参考素材（老毕设的两个仓库，仅作源码参考）──
+# 它内含一个旧仓库的 .git，纳入版本控制会被当成子模块，因此整目录忽略
+reference/
 
 # ── 日志与备份 ──
 *.log
 *.bak
 *.tmp
+
+
+deploy/
+
+docs/
+
+*.bat
