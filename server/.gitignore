@@ -1,0 +1,24 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+
+# ── 敏感配置：绝不提交 ──
+.env
+.env.*
+!.env.example
+
+# ── 本地数据库 ──
+*.sqlite3
+
+# ── collectstatic / 上传文件产物（老项目曾把 8.3MB 产物提交进仓库）──
+staticfiles/
+mediafiles/
+
+# ── 编辑器 ──
+.vscode/
+.idea/
